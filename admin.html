@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUTC Admin Panel</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>JUTC Admin Panel</h1>
+        <p>Update bus statuses and schedules</p>
+    </header>
+
+    <div class="container">
+        <div class="form-group">
+            <label for="parish">Select Parish:</label>
+            <select id="parish">
+                <option value="">--Select Parish--</option>
+                <option value="Kingston">Kingston</option>
+                <option value="St. Andrew">St. Andrew</option>
+                <option value="St. Catherine">St. Catherine</option>
+                <option value="Hanover">Hanover</option>
+                <option value="Westmoreland">Westmoreland</option>
+                <option value="Clarendon">Clarendon</option>
+                <option value="Manchester">Manchester</option>
+                <option value="St. Elizabeth">St. Elizabeth</option>
+                <option value="St. James">St. James</option>
+                <option value="Trelawny">Trelawny</option>
+                <option value="St. Ann">St. Ann</option>
+                <option value="St. Mary">St. Mary</option>
+                <option value="Portland">Portland</option>
+                <option value="St. Thomas">St. Thomas</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="community">Select Community:</label>
+            <select id="community">
+                <option value="">--Select Community--</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="status">Bus Status:</label>
+            <input type="text" id="status" placeholder="Enter bus status (e.g., broken down)">
+        </div>
+
+        <button onclick="updateStatus()">Update Status</button>
+
+        <div class="alerts">
+            <h3>Current Alerts</h3>
+            <ul id="alertsList">
+                <!-- Alerts will be displayed here -->
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 JUTC. All Rights Reserved.
+    </footer>
+
+    <script src="assets/js/admin-scripts.js"></script>
+</body>
+</html>

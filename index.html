@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUTC Bus Schedule</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>JUTC Bus Schedule Lookup</h1>
+        <p>Know when your next bus is arriving!</p>
+    </header>
+
+    <div class="container">
+        <div class="form-group">
+            <label for="parish">Select Parish:</label>
+            <select id="parish">
+                <option value="">--Select Parish--</option>
+                <option value="Kingston">Kingston</option>
+                <option value="St. Andrew">St. Andrew</option>
+                <option value="St. Catherine">St. Catherine</option>
+                <option value="Hanover">Hanover</option>
+                <option value="Westmoreland">Westmoreland</option>
+                <option value="Clarendon">Clarendon</option>
+                <option value="Manchester">Manchester</option>
+                <option value="St. Elizabeth">St. Elizabeth</option>
+                <option value="St. James">St. James</option>
+                <option value="Trelawny">Trelawny</option>
+                <option value="St. Ann">St. Ann</option>
+                <option value="St. Mary">St. Mary</option>
+                <option value="Portland">Portland</option>
+                <option value="St. Thomas">St. Thomas</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="community">Select Community:</label>
+            <select id="community">
+                <option value="">--Select Community--</option>
+            </select>
+        </div>
+
+        <button onclick="showSchedule()">Check Bus Schedule</button>
+
+        <div class="schedule" id="scheduleDisplay">
+            <!-- Schedule will be displayed here -->
+        </div>
+
+        <div class="alert" id="alertDisplay">
+            <!-- Alerts will be displayed here -->
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 JUTC. All Rights Reserved.
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
